@@ -1,0 +1,105 @@
+.navigation {
+    height: 50px;
+    background-color: #7A6A9F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 30px;
+    margin-left: 20px;
+
+    &:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+}
+
+form {
+    position: relative;
+    width: 20rem;
+    border-radius: .7rem;
+}
+
+input {
+    height: 2.5rem;
+    border: 0;
+    color: #2F2F2F;
+    font-size: 1.8rem;
+}
+
+input {
+    outline: 0;
+    width: 100%;
+    background: #FFF;
+    padding: 0 1.6rem;
+    border-radius: .7rem;
+    appearance: none;
+    transition: all 3s cubic-bezier(0, 0, 0.43, 1.49);
+    transition-property: width, border-radius;
+    z-index: 1;
+    position: relative;
+}
+
+input:not(:placeholder-shown) {
+    border-radius: .7rem;
+    width: calc(100% - 4rem);
+
+    +button {
+        display: block;
+    }
+}
+
+label {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.bars {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown svg {
+    width: 20px;
+    height: 20px;
+}
+
+.dropbtn {
+    color: #FFF;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: flex;
+    margin-top: 12px;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    gap: 5px;
+    position: absolute;
+    left: -1900%;
+    background-color: #D8E3EC;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content button {
+    font-weight: bold;
+    cursor: pointer;
+}

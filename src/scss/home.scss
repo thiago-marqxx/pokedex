@@ -1,0 +1,44 @@
+@import "../contexts/themes.scss";
+
+.home {
+    padding-top: 90px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+}
+
+main {
+    padding-bottom: 20px;
+    border: 2px solid #7A6A9F;
+    border-radius: 25px;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.listagem-pokemon {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.local-btn {
+    display: flex;
+    align-self: center;
+}
+
+.btn {
+    border: none;
+    background: none;
+    color: #7A6A9F;
+    margin-top: 20px;
+    font-size: 20px;
+    padding-top: 20px;
+
+    &:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+}

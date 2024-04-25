@@ -1,0 +1,42 @@
+.theme-toggle {
+    background: none;
+    border: none;
+
+    img {
+        width: 30px;
+        margin-right: 20px;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+}
+
+.dark-mode {
+    background-color: #0F0F0F;
+    border-radius: 0;
+
+    main {
+        border: 2px solid #D8E3EC;
+    }
+
+    .btn {
+        color: #D8E3EC;
+    }
+
+    .card {
+        background: linear-gradient(#383838, #0F0F0F);
+        color: #FFF;
+        box-shadow: 0 8px 16px -8px rgb(255, 255, 255);
+    }
+
+    .card2 {
+        background: linear-gradient(#383838, #0F0F0F);
+        box-shadow: 0 8px 16px -8px rgb(255, 255, 255);
+
+        h1 {
+            color: #FFF;
+        }
+    }
+}
