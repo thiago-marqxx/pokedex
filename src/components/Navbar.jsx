@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaFilter } from "react-icons/fa6";
 import { ThemeToggle } from "../contexts/ThemeToggle";
-import pokeLogo from '../assets/pokeball.png';
+import pokeLogo from '../../src/assets/pokeball.png';
 import "../scss/navbar.scss"
 
 const Navbar = ({ pokemonFilter, hideSearch, onTypeSelect }) => {
