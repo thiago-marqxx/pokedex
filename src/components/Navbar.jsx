@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaFilter } from "react-icons/fa6";
 import { ThemeToggle } from "../contexts/ThemeToggle";
+import pokeLogo from '../assets/pokeball.png';
 import "../scss/navbar.scss"
 
 const Navbar = ({ pokemonFilter, hideSearch, onTypeSelect }) => {
@@ -24,7 +25,7 @@ const Navbar = ({ pokemonFilter, hideSearch, onTypeSelect }) => {
         <div>
             <nav className="navigation">
                 <a href="/">
-                    <img src="../src/assets/pokeball.png" alt="pokebola" className="logo" />
+                    <img src={pokeLogo} alt="pokebola" className="logo" />
                 </a>
                 {!hideSearch && (
                     <>
